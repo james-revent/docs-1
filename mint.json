@@ -2,96 +2,82 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/favicon.png",
+    "light": "/logo/favicon.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#3f00d8", 
+    "light": "#f2f5f9", 
+    "dark": "#d0d5f9", 
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#3f00d8", 
+      "to": "#f2f5f9" 
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
+ 
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Sign Up",
+    "url": "https://www.reventapp.com/sign-up"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "introduction"
     },
     {
       "name": "API Reference",
       "openapi": "/api-reference/openapi.yaml",
       "url": "api-reference",
       "icon": "square-terminal"
+    },
+    {
+      "name": "Guides",
+      "icon": "slack",
+      "url": "guides/getting-started"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://medium.com/@contact_26315"
     }
   ],
+  
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Documentation",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        {
+          "group": "Group1",
+          "pages": [
+            "introduction",
+            "section2",
+            "development"
+          ]
+        },
+        {
+          "group": "Step by step",
+          "pages": [
+            "guides/creating-an-account",
+            "guides/adding-an-eventspace",
+            "guides/setting-up-an-event",
+            "guides/creating-and-managing-tickets",
+            "guides/managing-the-guest-list"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
+      "group": "API Reference",
       "pages": [
         "api-reference/introduction"
       ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
     }
   ],
+  
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/revent-app",
+    "linkedin": "https://www.linkedin.com/company/reventhq/posts/?feedView=all"
   }
 }
