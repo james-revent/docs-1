@@ -3,3 +3,51 @@ title: Introduction
 description: 'Explore our Guides and API Reference to get the most out of Revent.'
 ---
 
+# Introduction
+
+Welcome to the Revent Documentation! This guide will help you get started with Revent’s powerful event management tools and API. Whether you’re organizing events or integrating our API into your applications, we have everything you need to get the most out of Revent.
+
+## Getting Started
+
+### Creating an Account
+- **Sign Up**: Visit the Revent website and click ‘Sign Up’. Register using email, Google OAuth, or GitHub.
+- **Email Verification**: Check your email for a verification link and confirm your account.
+- **Initial Setup**: After verification, access the EventSpaces dashboard to set up your first EventSpace.
+
+### Setting Up Your First EventSpace
+- **Create an EventSpace**: Click “Add EventSpace,” choose a name, and configure labels, icons, and team collaboration settings.
+- **Organize Event Details**: Add event name, date, time, and description. Use the Overview page to share notes and ideas.
+
+### Managing Events and Content
+- **Task Boards**: Track event planning progress.
+- **Budget Management Tool**: Set up budgets to forecast expenses and manage revenue.
+- **Ticket Management**: Generate, customize, and manage tickets. Add custom questions for additional attendee information.
+
+## API Reference
+
+If you’re looking to integrate Revent into your applications, our API provides endpoints for managing EventSpaces, users, tickets, payments, and more.
+
+### Authenticating
+All API calls require Bearer token authentication. Start by generating an API key from your profile settings.
+
+### Managing EventSpaces
+- `GET /eventspaces`: Retrieve a list of all EventSpaces.
+- `POST /eventspaces`: Create a new EventSpace.
+- `PATCH /eventspaces`: Update an EventSpace.
+- `DELETE /eventspaces`: Delete an EventSpace.
+
+### Handling Tickets
+Use the tickets endpoints to create, retrieve, update, and delete ticket information for your events.
+
+### Integrating Payments
+Use the `stripe_payment_intents` endpoint to manage payment sessions for event tickets and other transactions.
+
+## Advanced Features
+
+Revent’s platform includes additional tools and options to optimize your event management:
+
+- **AI-Driven Daily Digest**: Receive real-time insights on your team’s productivity and upcoming milestones.
+- **Precision Budgeting**: Utilize real-time budget tracking and forecasting tools to maintain financial accuracy.
+- **Real-Time Collaboration**: Share updates, assign tasks, and communicate changes instantly to keep your team aligned.
+
+For more details on each feature, refer to our [Getting Started Guide](/getting-started) or [API Documentation](/api-reference).

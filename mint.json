@@ -5,6 +5,7 @@
     "dark": "/logo/favicon.png",
     "light": "/logo/favicon.png"
   },
+
   "favicon": "/logo/favicon.png",
   "colors": {
     "primary": "#3f00d8", 
@@ -20,6 +21,7 @@
     "name": "Sign Up",
     "url": "https://www.reventapp.com/sign-up"
   },
+
   "anchors": [
     {
       "name": "Documentation",
@@ -59,11 +61,11 @@
         {
           "group": "Step by step",
           "pages": [
-            "guides/creating-an-account",
+            "guides/creating-the-account",
             "guides/adding-an-eventspace",
             "guides/setting-up-an-event",
             "guides/creating-and-managing-tickets",
-            "guides/managing-the-guest-list"
+            "guides/creating-budgets-and-task-boards"
           ]
         }
       ]
