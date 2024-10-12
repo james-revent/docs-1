@@ -1,13 +1,12 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Revent",
   "logo": {
     "dark": "/logo/favicon.png",
     "light": "/logo/favicon.png"
   },
-
   "favicon": "/logo/favicon.png",
-  "colors": {
+    "colors": {
     "primary": "#3f00d8", 
     "light": "#f2f5f9", 
     "dark": "#d0d5f9", 
@@ -16,58 +15,65 @@
       "to": "#f2f5f9" 
     }
   },
- 
+  "topbarLinks": [
+    {
+      "name": "Reinvent The Way You Plan Events ",
+      "url": "https://www.reventapp.com/"
+    },
+    {
+      "name": "Pricing",
+      "url": "https://www.reventapp.com/#pricing"
+    }
+  ],
+  
   "topbarCtaButton": {
     "name": "Sign Up",
     "url": "https://www.reventapp.com/sign-up"
   },
-
   "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "introduction"
-    },
     {
       "name": "API Reference",
       "openapi": "/api-reference/openapi.yaml",
-      "url": "api-reference",
+      "url": "api-reference/introduction",
       "icon": "square-terminal"
     },
     {
       "name": "Guides",
-      "icon": "slack",
-      "url": "guides/getting-started"
+      "icon": "user",
+      "url": "guides"
     },
     {
       "name": "Blog",
-      "icon": "newspaper",
+      "icon": "book",
       "url": "https://medium.com/@contact_26315"
     }
+
   ],
-  
   "navigation": [
     {
-      "group": "Documentation",
+      "group": "",
       "pages": [
-        {
-          "group": "Group1",
-          "pages": [
-            "introduction",
-            "section2",
-            "development"
-          ]
-        },
-        {
-          "group": "Step by step",
-          "pages": [
-            "guides/creating-the-account",
-            "guides/adding-an-eventspace",
-            "guides/setting-up-an-event",
-            "guides/creating-and-managing-tickets",
-            "guides/creating-budgets-and-task-boards"
-          ]
-        }
+        "introduction"
+      ]
+    },
+
+    {
+      "group": "",
+      "pages": [
+        "guides/getting-started"
+      ]
+    },
+ 
+    {
+      "group": "Step by step",
+      "pages": [
+        "guides/creating-the-account",
+        "guides/eventspace",
+        "guides/event",
+        "guides/ticket",
+        "guides/budget",
+        "guides/task",
+        "guides/team"
       ]
     },
     {
@@ -76,10 +82,35 @@
         "api-reference/introduction"
       ]
     }
+
   ],
-  
-  "footerSocials": {
-    "github": "https://github.com/revent-app",
-    "linkedin": "https://www.linkedin.com/company/reventhq/posts/?feedView=all"
-  }
+  "api": {
+    "baseUrl": "https://api.elevenlabs.io",
+    "playground": {
+      "mode": "show"
+    }
+  },
+"footerSocials": {
+    "linkedin": "https://www.linkedin.com/company/reventhq/posts/?feedView=all",
+    "github": "https://github.com/revent-app"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-82RG1PXYVW"
+    },
+    "posthog": {
+      "apiKey": "phc_KQDh5IkRcTsPOoUtwmVxoATdOqNYCo0vTdwE77aNOQv",
+      "apiHost": "https://eu.i.posthog.com"
+    }
+  },
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
+  "redirects": [
+    {
+      "source": "/api-reference/how-to-use-tts-with-streaming-in-python",
+      "destination": "/api-reference/how-to-use-tts-with-streaming"
+    }
+  ]
 }
