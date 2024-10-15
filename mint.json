@@ -1,97 +1,116 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Revent",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/favicon.png",
+    "light": "/logo/favicon.png"
   },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+  "favicon": "/logo/favicon.png",
+    "colors": {
+    "primary": "#3f00d8", 
+    "light": "#f2f5f9", 
+    "dark": "#d0d5f9", 
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#3f00d8", 
+      "to": "#f2f5f9" 
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Reinvent The Way You Plan Events ",
+      "url": "https://www.reventapp.com/"
+    },
+    {
+      "name": "Pricing",
+      "url": "https://www.reventapp.com/#pricing"
     }
   ],
+  
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Sign Up",
+    "url": "https://www.reventapp.com/sign-up"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    },
     {
       "name": "API Reference",
       "openapi": "/api-reference/openapi.yaml",
-      "url": "api-reference",
+      "url": "api-reference/introduction",
       "icon": "square-terminal"
+    },
+    {
+      "name": "Guides",
+      "icon": "user",
+      "url": "guides"
+    },
+    {
+      "name": "Blog",
+      "icon": "book",
+      "url": "https://medium.com/@contact_26315"
     }
+
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "introduction"
+      ]
+    },
+
+    {
+      "group": "",
+      "pages": [
+        "guides/getting-started"
+      ]
+    },
+ 
+    {
+      "group": "Step by step",
+      "pages": [
+        "guides/creating-the-account",
+        "guides/eventspace",
+        "guides/event",
+        "guides/ticket",
+        "guides/budget",
+        "guides/task",
+        "guides/team"
       ]
     },
     {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
+      "group": "API Reference",
       "pages": [
         "api-reference/introduction"
       ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
     }
+
   ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  "api": {
+    "baseUrl": "https://api.elevenlabs.io",
+    "playground": {
+      "mode": "show"
+    }
+  },
+"footerSocials": {
+    "linkedin": "https://www.linkedin.com/company/reventhq/posts/?feedView=all",
+    "github": "https://github.com/revent-app"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-82RG1PXYVW"
+    },
+    "posthog": {
+      "apiKey": "phc_KQDh5IkRcTsPOoUtwmVxoATdOqNYCo0vTdwE77aNOQv",
+      "apiHost": "https://eu.i.posthog.com"
+    }
+  },
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
+  "redirects": [
+    {
+      "source": "/api-reference/how-to-use-tts-with-streaming-in-python",
+      "destination": "/api-reference/how-to-use-tts-with-streaming"
+    }
+  ]
 }

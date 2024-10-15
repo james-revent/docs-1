@@ -1,71 +1,71 @@
 ---
-title: Introduction
-description: 'Welcome to the home of your new documentation'
+title: "Introduction"
+description: "Explore our Guides and API Reference to get the most out of Revent."
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+---
 
-## Setting up
-
-The first step to world-class documentation is setting up your editing environments.
+## Welcome
+Welcome to the Revent Documentation! This guide will help you get started with Revent’s powerful event management tools and API. Whether you’re organizing events or integrating our API into your applications, we have everything you need to get the most out of Revent.
 
 <CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
+  <Card title="API Reference" icon="book-open-cover" href="/api-reference/text-to-speech">
+    Dig into the details of using the Revent API.
   </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
+  <Card title="Guides" icon="user" href="/guides">
+    Learn how to use Revent, step by step.
+  </Card>
+  <Card title="Visit our Website" icon="computer"href="https://www.reventapp.com/">
+    Begin your journey with Revent.
+  </Card>
+  <Card title="Visit our GitHub" icon="github" href="https://github.com/revent-app">
+    Learn more about Revent.
   </Card>
 </CardGroup>
 
-## Make it yours
+---
 
-Update your docs to your brand and add valuable content for the best user conversion.
+## Getting Started
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+### Creating an Account
+- **Sign Up**: Visit the Revent website and click ‘Sign Up’. Register using email, Google OAuth, or GitHub.
+- **Email Verification**: Check your email for a verification link and confirm your account.
+- **Initial Setup**: After verification, access the EventSpaces dashboard to set up your first EventSpace.
+
+### Setting Up Your First EventSpace
+- **Create an EventSpace**: Click “Add EventSpace,” choose a name, and configure labels, icons, and team collaboration settings.
+- **Organize Event Details**: Add event name, date, time, and description. Use the Overview page to share notes and ideas.
+
+### Managing Events and Content
+- **Task Boards**: Track event planning progress.
+- **Budget Management Tool**: Set up budgets to forecast expenses and manage revenue.
+- **Ticket Management**: Generate, customize, and manage tickets. Add custom questions for additional attendee information.
+
+## API Reference
+
+If you’re looking to integrate Revent into your applications, our API provides endpoints for managing EventSpaces, users, tickets, payments, and more.
+
+### Authenticating
+All API calls require Bearer token authentication. Start by generating an API key from your profile settings.
+
+### Managing EventSpaces
+- `GET /eventspaces`: Retrieve a list of all EventSpaces.
+- `POST /eventspaces`: Create a new EventSpace.
+- `PATCH /eventspaces`: Update an EventSpace.
+- `DELETE /eventspaces`: Delete an EventSpace.
+
+### Handling Tickets
+Use the tickets endpoints to create, retrieve, update, and delete ticket information for your events.
+
+### Integrating Payments
+Use the `stripe_payment_intents` endpoint to manage payment sessions for event tickets and other transactions.
+
+## Advanced Features
+
+Revent’s platform includes additional tools and options to optimize your event management:
+
+- **AI-Driven Daily Digest**: Receive real-time insights on your team’s productivity and upcoming milestones.
+- **Precision Budgeting**: Utilize real-time budget tracking and forecasting tools to maintain financial accuracy.
+- **Real-Time Collaboration**: Share updates, assign tasks, and communicate changes instantly to keep your team aligned.
+
+For more details on each feature, refer to our [Guides](/guides) or [API Documentation](/api-reference).
